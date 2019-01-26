@@ -13,13 +13,8 @@ end
 def assign_rooms(speakers)
   roomsArr = []
   
-  j = 0
- 
-  while j < speakers.length
-  roomsArr << "Hello, #{speakers[j]}! You'll be assigned to room #{j + 1}!"
+  speakers.each {|speaker| roomsArr << "Hello, #{speaker}! You'll be assigned to room #{j + 1}!"
   
-  j += 1
-  end
   
   return roomsArr
 end
