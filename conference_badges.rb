@@ -5,13 +5,7 @@ end
 def batch_badge_creator(namesArr)
   batchArr = []
   
-  i = 0
-  
-  while i < namesArr.length
-  batchArr << badge_maker(namesArr[i])
-  
-  i += 1
-  end
+  namesArr.each {|name| batchArr << name}
   
   return batchArr
 end
